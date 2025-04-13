@@ -2,88 +2,71 @@
 import json
 import itertools
 
+def load_menu_data():
+    with open("menu_data.json", "r") as f:
+        return json.load(f)
+
 def load_nutrition_data():
     with open("nutrition_data.json", "r") as f:
         return json.load(f)
 
-def calculate_meal_plans(user_goals, max_meals=4, top_n=10):
+def calculate_meal_plan(user_goals, max_meals=4, top_n=3):
     """
-    user_goals: dictionary with numeric keys "calories", "fats", "carbs", "proteins"
-    max_meals: maximum number of food items to include in a combination
-    top_n: number of best combinations (sorted by overall difference) to return
-    
-    Returns a list of candidate meal plans, each with:
-      - "combo": list of selected food items
-      - "totals": dictionary of total macros in that combo
-      - "diff": numeric value (sum of absolute differences from targets)
+    user_goals: dict with keys "carbs", "proteins", "fats", "calories"
+    Returns a list of up to top_n suggestions.
+    Each suggestion is a dict with:
+      - "meals": list of meal items (each with nutritional info)
+      - "total": combined macros totals
+      - "diff": the sum-of-absolute-differences between the combo totals and the user goals.
     """
+    menu_data = load_menu_data()
     nutrition_data = load_nutrition_data()
     
-    # Build a list of food items from nutrition_data.
+    # Create a mapping with lower-case keys for matching.
+    nutrition_map = { key.lower(): value for key, value in nutrition_data.items() }
+    
     available_items = []
-    for key, nutrition in nutrition_data.items():
-        try:
-            # Convert macros to float values (or leave them as numbers)
-            calories = float(nutrition.get("calories", 0))
-            fats     = float(nutrition.get("fats", 0))
-            carbs    = float(nutrition.get("carbs", 0))
-            proteins = float(nutrition.get("proteins", 0))
-        except Exception as e:
-            print(f"Error converting nutrition for {key}: {e}")
-            continue
-        
-        available_items.append({
-            "name": key,
-            "calories": calories,
-            "fats": fats,
-            "carbs": carbs,
-            "proteins": proteins
-        })
+    for item in menu_data.get("items", []):
+        name = item.get("name")
+        if name:
+            normalized_name = name.lower()
+            if normalized_name in nutrition_map:
+                details = nutrition_map[normalized_name].copy()
+                details["name"] = name  # Preserve original formatting
+                available_items.append(details)
     
     if not available_items:
         return []
     
-    candidate_plans = []
-    
-    # Iterate over combinations from 1 to max_meals items
+    suggestions = []
+    # Evaluate all combinations with 1 to max_meals items.
     for r in range(1, max_meals + 1):
         for combo in itertools.combinations(available_items, r):
-            totals = {"calories": 0, "fats": 0, "carbs": 0, "proteins": 0}
+            totals = {"carbs": 0, "proteins": 0, "fats": 0, "calories": 0}
             for item in combo:
-                totals["calories"] += item["calories"]
-                totals["fats"]     += item["fats"]
-                totals["carbs"]    += item["carbs"]
-                totals["proteins"] += item["proteins"]
-            # Compute total absolute deviation from user goals:
-            diff = (
-                abs(totals["calories"] - user_goals.get("calories", 0)) +
-                abs(totals["fats"]     - user_goals.get("fats", 0)) +
-                abs(totals["carbs"]    - user_goals.get("carbs", 0)) +
-                abs(totals["proteins"] - user_goals.get("proteins", 0))
-            )
-            candidate_plans.append({"combo": [item for item in combo], "totals": totals, "diff": diff})
+                for macro in totals:
+                    totals[macro] += item.get(macro, 0)
+            # Simple measure: sum of absolute differences between totals and user goals.
+            diff = sum(abs(totals[macro] - user_goals.get(macro, 0)) for macro in totals)
+            suggestions.append({
+                "meals": [item for item in combo],
+                "total": totals,
+                "diff": diff
+            })
     
-    # Sort the candidate plans by diff (lower diff is better)
-    candidate_plans.sort(key=lambda x: x["diff"])
+    # Sort suggestions by how close they are (lower diff is better)
+    suggestions.sort(key=lambda x: x["diff"])
     
-    # Return the top N results (or all if fewer than top_n)
-    return candidate_plans[:top_n]
+    return suggestions[:top_n]
 
-# For testing when running standalone:
+# For testing via command line
 if __name__ == "__main__":
-    sample_goals = {
-        "calories": 2000,
-        "fats": 70,
-        "carbs": 250,
-        "proteins": 150
-    }
-    plans = calculate_meal_plans(sample_goals, max_meals=4, top_n=10)
-    if plans:
-        for idx, plan in enumerate(plans, start=1):
-            print(f"Plan {idx}: Diff = {plan['diff']}")
-            for item in plan["combo"]:
-                print(f"  - {item['name']}: Calories {item['calories']}, Fats {item['fats']}, Carbs {item['carbs']}, Proteins {item['proteins']}")
-            print("  Totals:", plan["totals"])
-            print("-" * 40)
-    else:
-        print("No candidate plans found.")
+    sample_goals = {"carbs": 300, "proteins": 100, "fats": 70, "calories": 2000}
+    suggestions = calculate_meal_plan(sample_goals)
+    for idx, suggestion in enumerate(suggestions, start=1):
+        print(f"Option {idx}:")
+        for meal in suggestion["meals"]:
+            print(f" - {meal['name']}: Carbs {meal.get('carbs')}, Proteins {meal.get('proteins')}, Fats {meal.get('fats')}, Calories {meal.get('calories')}")
+        print("Totals:", suggestion["total"])
+        print("Diff:", suggestion["diff"])
+        print("-----")
