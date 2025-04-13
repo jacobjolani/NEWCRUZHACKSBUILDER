@@ -10,9 +10,15 @@
 </head>
 <body>
     <header>
-        <div class="container header-container">
-            <h1>Daily Meal Planner</h1>
-            <p>Your personalized guide to hitting your nutritional goals</p>
+        <div class="header-container container">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/ucberkeley_logo.png') }}" alt="UC Berkeley Logo">
+                <h1>Daily Meal Planner</h1>
+            </div>
+            <p class="tagline">A meal planner made for UC Berkeley students</p>
+            <div class="hero-container">
+                <img src="{{ url_for('static', filename='images/students_eating.jpg') }}" alt="Students enjoying food" class="hero-img">
+            </div>
         </div>
     </header>
 
@@ -49,7 +55,7 @@
 
     <footer>
         <div class="container footer-container">
-            <p>&copy; 2025 Daily Meal Planner. All Rights Reserved.</p>
+            <p>&copy; 2025 Daily Meal Planner. All Rights Reserved. Made for UC Berkeley students.</p>
         </div>
     </footer>
 

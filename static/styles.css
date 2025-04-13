@@ -28,12 +28,44 @@ header {
     padding: 40px 0;
     text-align: center;
 }
-.header-container h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-.header-container p {
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.tagline {
     font-size: 1.2em;
+    font-weight: 500;
+}
+
+.hero-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Main Section */
