@@ -1,11 +1,9 @@
-/* Reset some default styling */
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Apply the modern font */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f7f7f7;
@@ -13,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Container to center the content */
+/* Container */
 .container {
     width: 90%;
     max-width: 1000px;
@@ -21,54 +19,42 @@ body {
     padding: 20px;
 }
 
-/* Header styling */
+/* Header styling with background image and overlay */
 header {
-    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    background: 
+        linear-gradient(135deg, rgba(42,42,114,0.8), rgba(0,159,253,0.8)),
+        url("../images/students_eating.jpg");
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
 }
-
 .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
-
 .logo-container img {
-    width: 70px;
+    width: 150px;  /* Increased logo size */
     height: auto;
 }
-
 .logo-container h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
 }
-
 .tagline {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
-.hero-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-}
-.hero-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Main Section */
+/* Main form section */
 main .form-section {
     background: white;
     padding: 30px;
@@ -97,7 +83,7 @@ main .form-section {
     border-radius: 4px;
 }
 
-/* Button */
+/* Button styling */
 .btn {
     display: inline-block;
     background-color: #009ffd;
@@ -126,8 +112,6 @@ main .form-section {
     color: #2a2a72;
     margin-bottom: 15px;
 }
-
-/* Meal items styling */
 .meal-item {
     border-top: 1px solid #eee;
     padding: 10px 0;
@@ -143,8 +127,6 @@ main .form-section {
 .meal-item p {
     font-size: 0.95em;
 }
-
-/* Total macros */
 .meal-total {
     border-top: 2px solid #ccc;
     margin-top: 20px;

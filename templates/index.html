@@ -5,7 +5,7 @@
     <title>Daily Meal Planner</title>
     <!-- Link to external CSS in the static folder -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <!-- Optionally include Google Fonts for a modern look -->
+    <!-- Include Google Fonts for a modern look -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,9 +16,6 @@
                 <h1>Daily Meal Planner</h1>
             </div>
             <p class="tagline">A meal planner made for UC Berkeley students</p>
-            <div class="hero-container">
-                <img src="{{ url_for('static', filename='images/students_eating.jpg') }}" alt="Students enjoying food" class="hero-img">
-            </div>
         </div>
     </header>
 
@@ -63,7 +60,6 @@
         document.getElementById("goalForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            // Prepare form data from user inputs
             const formData = {
                 carbs: parseInt(document.getElementById("carbs").value, 10),
                 proteins: parseInt(document.getElementById("proteins").value, 10),
@@ -71,7 +67,6 @@
                 calories: parseInt(document.getElementById("calories").value, 10)
             };
 
-            // POST the data to the API endpoint
             fetch("/api/mealplan", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -81,9 +76,7 @@
             .then(data => {
                 const resultsDiv = document.getElementById("results");
 
-                // Build the result HTML for this submission
-                let resultHTML = `<div class="meal-plan">
-                                    <h2>Your Meal Plan</h2>`;
+                let resultHTML = `<div class="meal-plan"><h2>Your Meal Plan</h2>`;
                 if (data.meals.length === 0) {
                     resultHTML += `<p>No meal suggestions found. Please try again later.</p>`;
                 } else {
@@ -105,11 +98,7 @@
                                     </div>`;
                 }
                 resultHTML += `</div>`;
-
-                // Append results so that previous submissions remain visible
                 resultsDiv.innerHTML += resultHTML;
-
-                // Reset the form for the next submission
                 document.getElementById("goalForm").reset();
             })
             .catch(error => {

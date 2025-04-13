@@ -3,4 +3,5 @@
   "pasta primavera": { "carbs": 50, "proteins": 15, "fats": 10, "calories": 400 },
   "garden salad": { "carbs": 15, "proteins": 5, "fats": 2, "calories": 100 },
   "veggie burger": { "carbs": 40, "proteins": 20, "fats": 12, "calories": 350 }
+   
 }
