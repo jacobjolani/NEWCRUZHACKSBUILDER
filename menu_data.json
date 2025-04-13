@@ -2,733 +2,1219 @@
     "date": "2025-04-13",
     "items": [
         {
-            "name": "Awards"
+            "name": "Awards",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Staff Directory"
+            "name": "Staff Directory",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Café 3"
+            "name": "Café 3",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Clark Kerr"
+            "name": "Clark Kerr",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Crossroads"
+            "name": "Crossroads",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Foothill"
+            "name": "Foothill",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Bear Market"
+            "name": "Bear Market",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "CKCub"
+            "name": "CKCub",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Cub Market"
+            "name": "Cub Market",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "The DenPizzeria 1868"
+            "name": "The DenPizzeria 1868",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Pizzeria 1868"
+            "name": "Pizzeria 1868",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Brown’s"
+            "name": "Brown’s",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "The Eateries at Student Union"
+            "name": "The Eateries at Student Union",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "The Golden Bear Café"
+            "name": "The Golden Bear Café",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Local x Design"
+            "name": "Local x Design",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Grubhub"
+            "name": "Grubhub",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Campus Map"
+            "name": "Campus Map",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living on campusTerms and Conditions (living on campus)"
+            "name": "Living on campusTerms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (living on campus)"
+            "name": "Terms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living off campusTerms and Conditions (Living off-campus)"
+            "name": "Living off campusTerms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (Living off-campus)"
+            "name": "Terms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Important Dates"
+            "name": "Important Dates",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "FAQ"
+            "name": "FAQ",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions for 2024-2025 Meal Plans"
+            "name": "Terms and Conditions for 2024-2025 Meal Plans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living on campusTerms and Conditions (living on campus)"
+            "name": "Living on campusTerms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (living on campus)"
+            "name": "Terms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living off campusTerms and Conditions (Living off-campus)"
+            "name": "Living off campusTerms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (Living off-campus)"
+            "name": "Terms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Important Dates"
+            "name": "Important Dates",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "FAQ"
+            "name": "FAQ",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions for 2025-2026 Meal Plans"
+            "name": "Terms and Conditions for 2025-2026 Meal Plans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Newly Admitted Students"
+            "name": "Newly Admitted Students",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions for Faculty and Staff Flex Dollars"
+            "name": "Terms and Conditions for Faculty and Staff Flex Dollars",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Manage Your Account"
+            "name": "Manage Your Account",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Serving Size Guide"
+            "name": "Serving Size Guide",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Special Diets"
+            "name": "Special Diets",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Allergies"
+            "name": "Allergies",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Resources"
+            "name": "Resources",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Food and Beverage Choices Policy"
+            "name": "Food and Beverage Choices Policy",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Meet the Dietitian"
+            "name": "Meet the Dietitian",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sustainable Food"
+            "name": "Sustainable Food",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Carbon Footprint"
+            "name": "Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Waste Reduction"
+            "name": "Waste Reduction",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Gardens at Clark Kerr & Brown’s"
+            "name": "Gardens at Clark Kerr & Brown’s",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "VisitingParentsFaculty/StaffMap"
+            "name": "VisitingParentsFaculty/StaffMap",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Parents"
+            "name": "Parents",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Faculty/Staff"
+            "name": "Faculty/Staff",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Map"
+            "name": "Map",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Tabling Request"
+            "name": "Tabling Request",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Comment Card"
+            "name": "Comment Card",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Text and Tell"
+            "name": "Text and Tell",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "JobsProfessional Staff JobsStudent Jobs"
+            "name": "JobsProfessional Staff JobsStudent Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Professional Staff Jobs"
+            "name": "Professional Staff Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Student Jobs"
+            "name": "Student Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sitemap"
+            "name": "Sitemap",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Catering"
+            "name": "Catering",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegan"
+            "name": "Vegan",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegetarian"
+            "name": "Vegetarian",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Kosher"
+            "name": "Kosher",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal"
+            "name": "Halal",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Milk"
+            "name": "Milk",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Egg"
+            "name": "Egg",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Fish"
+            "name": "Fish",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Shellfish"
+            "name": "Shellfish",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Tree Nuts"
+            "name": "Tree Nuts",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Wheat"
+            "name": "Wheat",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Peanuts"
+            "name": "Peanuts",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Soybeans"
+            "name": "Soybeans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sesame"
+            "name": "Sesame",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Gluten"
+            "name": "Gluten",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Pork"
+            "name": "Pork",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Alcohol"
+            "name": "Alcohol",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Beef BarbacoaHigh Carbon Footprint"
+            "name": "Beef BarbacoaHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Mexican RiceVegan OptionLow Carbon Footprint"
+            "name": "Mexican RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sauteed Corn Pepper MexicaliVegan OptionLow Carbon Footprint"
+            "name": "Sauteed Corn Pepper MexicaliVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Flour TortillaWheatGlutenVegan OptionLow Carbon Footprint"
+            "name": "Flour TortillaWheatGlutenVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Bean ChiliVegan OptionLow Carbon Footprint"
+            "name": "Bean ChiliVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint"
+            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Turkey Sausage LinkLow Carbon Footprint"
+            "name": "Turkey Sausage LinkLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint"
+            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal Ground BeefHigh Carbon Footprint"
+            "name": "Halal Ground BeefHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Pinto BeansVegan OptionLow Carbon Footprint"
+            "name": "Pinto BeansVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Honey Glazed CarrotsLow Carbon Footprint"
+            "name": "Honey Glazed CarrotsLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint"
+            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegan Scrambled EggVegan OptionLow Carbon Footprint"
+            "name": "Vegan Scrambled EggVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Kosher Herb Roasted ChickenMedium Carbon Footprint"
+            "name": "Kosher Herb Roasted ChickenMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Long Grain RiceVegan OptionLow Carbon Footprint"
+            "name": "Long Grain RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "OatmealVegan OptionLow Carbon Footprint"
+            "name": "OatmealVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Beef Chili Colorado StewHigh Carbon Footprint"
+            "name": "Beef Chili Colorado StewHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Long Grain RiceVegan OptionLow Carbon Footprint"
+            "name": "Long Grain RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sauteed Corn PasillaVegan OptionLow Carbon Footprint"
+            "name": "Sauteed Corn PasillaVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Kosher Beef MeatloafEggWheatGlutenKosherLow Carbon Footprint"
+            "name": "Kosher Beef MeatloafEggWheatGlutenKosherLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted PotatoesVegan OptionLow Carbon Footprint"
+            "name": "Roasted PotatoesVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegan Primavera SauceVegan OptionLow Carbon Footprint"
+            "name": "Vegan Primavera SauceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Oregano CornVegan OptionLow Carbon Footprint"
+            "name": "Roasted Oregano CornVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "New England Clam ChowderMilkShellfishHigh Carbon Footprint"
+            "name": "New England Clam ChowderMilkShellfishHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Tri TipHigh Carbon Footprint"
+            "name": "Roasted Tri TipHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegan Italian \"Sausage\"Vegan OptionLow Carbon Footprint"
+            "name": "Vegan Italian \"Sausage\"Vegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Wild RiceVegan OptionLow Carbon Footprint"
+            "name": "Wild RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Brussels SproutsVegan OptionLow Carbon Footprint"
+            "name": "Brussels SproutsVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint"
+            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Pork Sausage PattyPorkMedium Carbon Footprint"
+            "name": "Pork Sausage PattyPorkMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint"
+            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Brown RiceVegan OptionLow Carbon Footprint"
+            "name": "Brown RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Garlic Roasted BroccoliVegan OptionLow Carbon Footprint"
+            "name": "Garlic Roasted BroccoliVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Zucchini MushroomVegan OptionLow Carbon Footprint"
+            "name": "Roasted Zucchini MushroomVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Citrus Glaze PorkPorkHigh Carbon Footprint"
+            "name": "Citrus Glaze PorkPorkHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Forbidden RiceVegan OptionLow Carbon Footprint"
+            "name": "Forbidden RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Garbanzo BeansVegan OptionLow Carbon Footprint"
+            "name": "Garbanzo BeansVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Stir Fried CabbageVegan OptionLow Carbon Footprint"
+            "name": "Stir Fried CabbageVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal Ground BeefHigh Carbon Footprint"
+            "name": "Halal Ground BeefHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Chicken BreastMedium Carbon Footprint"
+            "name": "Chicken BreastMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Medium Grain RiceVegan OptionHigh Carbon Footprint"
+            "name": "Medium Grain RiceVegan OptionHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Brown RiceVegan OptionLow Carbon Footprint"
+            "name": "Brown RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Meat LasagnaMilkWheatSoybeansGlutenHigh Carbon Footprint"
+            "name": "Meat LasagnaMilkWheatSoybeansGlutenHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Gluten Free Penne PastaVegan OptionLow Carbon Footprint"
+            "name": "Gluten Free Penne PastaVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Marinara SauceVegan OptionLow Carbon Footprint"
+            "name": "Marinara SauceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Forbidden RiceVegan OptionLow Carbon Footprint"
+            "name": "Forbidden RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Garbanzo BeansVegan OptionLow Carbon Footprint"
+            "name": "Garbanzo BeansVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Stir Fried CabbageVegan OptionLow Carbon Footprint"
+            "name": "Stir Fried CabbageVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal Ground BeefHigh Carbon Footprint"
+            "name": "Halal Ground BeefHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Chicken BreastMedium Carbon Footprint"
+            "name": "Chicken BreastMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint"
+            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint"
+            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Pork Sausage PattyPorkMedium Carbon Footprint"
+            "name": "Pork Sausage PattyPorkMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Steamed PotatoVegan OptionLow Carbon Footprint"
+            "name": "Steamed PotatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Italian Vegetable BlendVegan OptionLow Carbon Footprint"
+            "name": "Italian Vegetable BlendVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Fire Braised Chicken BreastMedium Carbon Footprint"
+            "name": "Fire Braised Chicken BreastMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal Ground BeefHigh Carbon Footprint"
+            "name": "Halal Ground BeefHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Honey Glazed CarrotsLow Carbon Footprint"
+            "name": "Honey Glazed CarrotsLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint"
+            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Tikka Masala Chicken BreastMilkMedium Carbon Footprint"
+            "name": "Tikka Masala Chicken BreastMilkMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Citrus Basmati RiceVegan OptionLow Carbon Footprint"
+            "name": "Citrus Basmati RiceVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Tarka Dal StewVegan OptionLow Carbon Footprint"
+            "name": "Tarka Dal StewVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Kosher NaanWheatGlutenVegan OptionLow Carbon Footprint"
+            "name": "Kosher NaanWheatGlutenVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal Ground BeefHigh Carbon Footprint"
+            "name": "Halal Ground BeefHigh Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Honey Glazed CarrotsLow Carbon Footprint"
+            "name": "Honey Glazed CarrotsLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint"
+            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Awards"
+            "name": "Awards",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Staff Directory"
+            "name": "Staff Directory",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of March 2"
+            "name": "Week of March 2",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of March 9"
+            "name": "Week of March 9",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of March 16"
+            "name": "Week of March 16",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of March 23"
+            "name": "Week of March 23",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of March 30"
+            "name": "Week of March 30",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of April 6"
+            "name": "Week of April 6",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of April 13"
+            "name": "Week of April 13",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of April 27"
+            "name": "Week of April 27",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of April 20"
+            "name": "Week of April 20",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of May 4"
+            "name": "Week of May 4",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of May 11"
+            "name": "Week of May 11",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Week of May 18"
+            "name": "Week of May 18",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Café 3"
+            "name": "Café 3",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Clark Kerr"
+            "name": "Clark Kerr",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Crossroads"
+            "name": "Crossroads",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Foothill"
+            "name": "Foothill",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Bear Market"
+            "name": "Bear Market",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "CKCub"
+            "name": "CKCub",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Cub Market"
+            "name": "Cub Market",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "The DenPizzeria 1868"
+            "name": "The DenPizzeria 1868",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Pizzeria 1868"
+            "name": "Pizzeria 1868",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Brown’s"
+            "name": "Brown’s",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "The Eateries at Student Union"
+            "name": "The Eateries at Student Union",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "The Golden Bear Café"
+            "name": "The Golden Bear Café",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Local x Design"
+            "name": "Local x Design",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Grubhub"
+            "name": "Grubhub",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Campus Map"
+            "name": "Campus Map",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living on campusTerms and Conditions (living on campus)"
+            "name": "Living on campusTerms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (living on campus)"
+            "name": "Terms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living off campusTerms and Conditions (Living off-campus)"
+            "name": "Living off campusTerms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (Living off-campus)"
+            "name": "Terms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Important Dates"
+            "name": "Important Dates",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "FAQ"
+            "name": "FAQ",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions for 2024-2025 Meal Plans"
+            "name": "Terms and Conditions for 2024-2025 Meal Plans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living on campusTerms and Conditions (living on campus)"
+            "name": "Living on campusTerms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (living on campus)"
+            "name": "Terms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Living off campusTerms and Conditions (Living off-campus)"
+            "name": "Living off campusTerms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions (Living off-campus)"
+            "name": "Terms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Important Dates"
+            "name": "Important Dates",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "FAQ"
+            "name": "FAQ",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions for 2025-2026 Meal Plans"
+            "name": "Terms and Conditions for 2025-2026 Meal Plans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Newly Admitted Students"
+            "name": "Newly Admitted Students",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Terms and Conditions for Faculty and Staff Flex Dollars"
+            "name": "Terms and Conditions for Faculty and Staff Flex Dollars",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Manage Your Account"
+            "name": "Manage Your Account",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Serving Size Guide"
+            "name": "Serving Size Guide",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Special Diets"
+            "name": "Special Diets",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Allergies"
+            "name": "Allergies",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Resources"
+            "name": "Resources",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Food and Beverage Choices Policy"
+            "name": "Food and Beverage Choices Policy",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Meet the Dietitian"
+            "name": "Meet the Dietitian",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sustainable Food"
+            "name": "Sustainable Food",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Carbon Footprint"
+            "name": "Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Waste Reduction"
+            "name": "Waste Reduction",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Gardens at Clark Kerr & Brown’s"
+            "name": "Gardens at Clark Kerr & Brown’s",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "VisitingParentsFaculty/StaffMap"
+            "name": "VisitingParentsFaculty/StaffMap",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Parents"
+            "name": "Parents",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Faculty/Staff"
+            "name": "Faculty/Staff",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Map"
+            "name": "Map",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Tabling Request"
+            "name": "Tabling Request",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Comment Card"
+            "name": "Comment Card",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Text and Tell"
+            "name": "Text and Tell",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "JobsProfessional Staff JobsStudent Jobs"
+            "name": "JobsProfessional Staff JobsStudent Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Professional Staff Jobs"
+            "name": "Professional Staff Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Student Jobs"
+            "name": "Student Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sitemap"
+            "name": "Sitemap",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Catering"
+            "name": "Catering",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Milk"
+            "name": "Milk",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Egg"
+            "name": "Egg",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Shellfish"
+            "name": "Shellfish",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Fish"
+            "name": "Fish",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Tree Nuts"
+            "name": "Tree Nuts",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Wheat"
+            "name": "Wheat",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Peanuts"
+            "name": "Peanuts",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Sesame"
+            "name": "Sesame",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Soybeans"
+            "name": "Soybeans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Low Carbon Footprint"
+            "name": "Low Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Medium Carbon Footprint"
+            "name": "Medium Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "High Carbon Footprint"
+            "name": "High Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegan Option"
+            "name": "Vegan Option",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Vegetarian Option"
+            "name": "Vegetarian Option",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Contains Gluten"
+            "name": "Contains Gluten",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Contains Pork"
+            "name": "Contains Pork",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Contains Alcohol"
+            "name": "Contains Alcohol",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Halal"
+            "name": "Halal",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Kosher"
+            "name": "Kosher",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "facebook"
+            "name": "facebook",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "instagram"
+            "name": "instagram",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Privacy Policy"
+            "name": "Privacy Policy",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Accessibility"
+            "name": "Accessibility",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         },
         {
-            "name": "Nondiscrimination"
+            "name": "Nondiscrimination",
+            "meal_time": "Unknown",
+            "location": "Unknown"
         }
     ]
 }
