@@ -1,10 +1,734 @@
 {
     "date": "2025-04-13",
     "items": [
-      { "name": "Grilled Chicken" },
-      { "name": "Pasta Primavera" },
-      { "name": "Garden Salad" },
-      { "name": "Veggie Burger" }
+        {
+            "name": "Awards"
+        },
+        {
+            "name": "Staff Directory"
+        },
+        {
+            "name": "Café 3"
+        },
+        {
+            "name": "Clark Kerr"
+        },
+        {
+            "name": "Crossroads"
+        },
+        {
+            "name": "Foothill"
+        },
+        {
+            "name": "Bear Market"
+        },
+        {
+            "name": "CKCub"
+        },
+        {
+            "name": "Cub Market"
+        },
+        {
+            "name": "The DenPizzeria 1868"
+        },
+        {
+            "name": "Pizzeria 1868"
+        },
+        {
+            "name": "Brown’s"
+        },
+        {
+            "name": "The Eateries at Student Union"
+        },
+        {
+            "name": "The Golden Bear Café"
+        },
+        {
+            "name": "Local x Design"
+        },
+        {
+            "name": "Grubhub"
+        },
+        {
+            "name": "Campus Map"
+        },
+        {
+            "name": "Living on campusTerms and Conditions (living on campus)"
+        },
+        {
+            "name": "Terms and Conditions (living on campus)"
+        },
+        {
+            "name": "Living off campusTerms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Terms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Important Dates"
+        },
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "Terms and Conditions for 2024-2025 Meal Plans"
+        },
+        {
+            "name": "Living on campusTerms and Conditions (living on campus)"
+        },
+        {
+            "name": "Terms and Conditions (living on campus)"
+        },
+        {
+            "name": "Living off campusTerms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Terms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Important Dates"
+        },
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "Terms and Conditions for 2025-2026 Meal Plans"
+        },
+        {
+            "name": "Newly Admitted Students"
+        },
+        {
+            "name": "Terms and Conditions for Faculty and Staff Flex Dollars"
+        },
+        {
+            "name": "Manage Your Account"
+        },
+        {
+            "name": "Serving Size Guide"
+        },
+        {
+            "name": "Special Diets"
+        },
+        {
+            "name": "Allergies"
+        },
+        {
+            "name": "Resources"
+        },
+        {
+            "name": "Food and Beverage Choices Policy"
+        },
+        {
+            "name": "Meet the Dietitian"
+        },
+        {
+            "name": "Sustainable Food"
+        },
+        {
+            "name": "Carbon Footprint"
+        },
+        {
+            "name": "Waste Reduction"
+        },
+        {
+            "name": "Gardens at Clark Kerr & Brown’s"
+        },
+        {
+            "name": "VisitingParentsFaculty/StaffMap"
+        },
+        {
+            "name": "Parents"
+        },
+        {
+            "name": "Faculty/Staff"
+        },
+        {
+            "name": "Map"
+        },
+        {
+            "name": "Tabling Request"
+        },
+        {
+            "name": "Comment Card"
+        },
+        {
+            "name": "Text and Tell"
+        },
+        {
+            "name": "JobsProfessional Staff JobsStudent Jobs"
+        },
+        {
+            "name": "Professional Staff Jobs"
+        },
+        {
+            "name": "Student Jobs"
+        },
+        {
+            "name": "Sitemap"
+        },
+        {
+            "name": "Catering"
+        },
+        {
+            "name": "Vegan"
+        },
+        {
+            "name": "Vegetarian"
+        },
+        {
+            "name": "Kosher"
+        },
+        {
+            "name": "Halal"
+        },
+        {
+            "name": "Milk"
+        },
+        {
+            "name": "Egg"
+        },
+        {
+            "name": "Fish"
+        },
+        {
+            "name": "Shellfish"
+        },
+        {
+            "name": "Tree Nuts"
+        },
+        {
+            "name": "Wheat"
+        },
+        {
+            "name": "Peanuts"
+        },
+        {
+            "name": "Soybeans"
+        },
+        {
+            "name": "Sesame"
+        },
+        {
+            "name": "Gluten"
+        },
+        {
+            "name": "Pork"
+        },
+        {
+            "name": "Alcohol"
+        },
+        {
+            "name": "Beef BarbacoaHigh Carbon Footprint"
+        },
+        {
+            "name": "Mexican RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Sauteed Corn Pepper MexicaliVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Flour TortillaWheatGlutenVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+        },
+        {
+            "name": "Bean ChiliVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint"
+        },
+        {
+            "name": "Turkey Sausage LinkLow Carbon Footprint"
+        },
+        {
+            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Halal Ground BeefHigh Carbon Footprint"
+        },
+        {
+            "name": "Pinto BeansVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Honey Glazed CarrotsLow Carbon Footprint"
+        },
+        {
+            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Vegan Scrambled EggVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Kosher Herb Roasted ChickenMedium Carbon Footprint"
+        },
+        {
+            "name": "Long Grain RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "OatmealVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Beef Chili Colorado StewHigh Carbon Footprint"
+        },
+        {
+            "name": "Long Grain RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Sauteed Corn PasillaVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Kosher Beef MeatloafEggWheatGlutenKosherLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted PotatoesVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Vegan Primavera SauceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Oregano CornVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "New England Clam ChowderMilkShellfishHigh Carbon Footprint"
+        },
+        {
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Tri TipHigh Carbon Footprint"
+        },
+        {
+            "name": "Vegan Italian \"Sausage\"Vegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Wild RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Brussels SproutsVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint"
+        },
+        {
+            "name": "Pork Sausage PattyPorkMedium Carbon Footprint"
+        },
+        {
+            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Brown RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Garlic Roasted BroccoliVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Zucchini MushroomVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Citrus Glaze PorkPorkHigh Carbon Footprint"
+        },
+        {
+            "name": "Forbidden RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Garbanzo BeansVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Stir Fried CabbageVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Halal Ground BeefHigh Carbon Footprint"
+        },
+        {
+            "name": "Chicken BreastMedium Carbon Footprint"
+        },
+        {
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Medium Grain RiceVegan OptionHigh Carbon Footprint"
+        },
+        {
+            "name": "Brown RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Meat LasagnaMilkWheatSoybeansGlutenHigh Carbon Footprint"
+        },
+        {
+            "name": "Gluten Free Penne PastaVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Marinara SauceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+        },
+        {
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Forbidden RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Garbanzo BeansVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Stir Fried CabbageVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Roasted Cherry TomatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Halal Ground BeefHigh Carbon Footprint"
+        },
+        {
+            "name": "Chicken BreastMedium Carbon Footprint"
+        },
+        {
+            "name": "Scrambled EggsEggVegetarian OptionMedium Carbon Footprint"
+        },
+        {
+            "name": "Fried Tator TotsVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Pork Sausage PattyPorkMedium Carbon Footprint"
+        },
+        {
+            "name": "Steamed PotatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Italian Vegetable BlendVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Fire Braised Chicken BreastMedium Carbon Footprint"
+        },
+        {
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+        },
+        {
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Halal Ground BeefHigh Carbon Footprint"
+        },
+        {
+            "name": "Honey Glazed CarrotsLow Carbon Footprint"
+        },
+        {
+            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Tikka Masala Chicken BreastMilkMedium Carbon Footprint"
+        },
+        {
+            "name": "Citrus Basmati RiceVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Tarka Dal StewVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Kosher NaanWheatGlutenVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Turkey and Bean ChiliMedium Carbon Footprint"
+        },
+        {
+            "name": "Southwestern Corn ChowderVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Halal Ground BeefHigh Carbon Footprint"
+        },
+        {
+            "name": "Honey Glazed CarrotsLow Carbon Footprint"
+        },
+        {
+            "name": "Baked Diced Sweet PotatoVegan OptionLow Carbon Footprint"
+        },
+        {
+            "name": "Awards"
+        },
+        {
+            "name": "Staff Directory"
+        },
+        {
+            "name": "Week of March 2"
+        },
+        {
+            "name": "Week of March 9"
+        },
+        {
+            "name": "Week of March 16"
+        },
+        {
+            "name": "Week of March 23"
+        },
+        {
+            "name": "Week of March 30"
+        },
+        {
+            "name": "Week of April 6"
+        },
+        {
+            "name": "Week of April 13"
+        },
+        {
+            "name": "Week of April 27"
+        },
+        {
+            "name": "Week of April 20"
+        },
+        {
+            "name": "Week of May 4"
+        },
+        {
+            "name": "Week of May 11"
+        },
+        {
+            "name": "Week of May 18"
+        },
+        {
+            "name": "Café 3"
+        },
+        {
+            "name": "Clark Kerr"
+        },
+        {
+            "name": "Crossroads"
+        },
+        {
+            "name": "Foothill"
+        },
+        {
+            "name": "Bear Market"
+        },
+        {
+            "name": "CKCub"
+        },
+        {
+            "name": "Cub Market"
+        },
+        {
+            "name": "The DenPizzeria 1868"
+        },
+        {
+            "name": "Pizzeria 1868"
+        },
+        {
+            "name": "Brown’s"
+        },
+        {
+            "name": "The Eateries at Student Union"
+        },
+        {
+            "name": "The Golden Bear Café"
+        },
+        {
+            "name": "Local x Design"
+        },
+        {
+            "name": "Grubhub"
+        },
+        {
+            "name": "Campus Map"
+        },
+        {
+            "name": "Living on campusTerms and Conditions (living on campus)"
+        },
+        {
+            "name": "Terms and Conditions (living on campus)"
+        },
+        {
+            "name": "Living off campusTerms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Terms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Important Dates"
+        },
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "Terms and Conditions for 2024-2025 Meal Plans"
+        },
+        {
+            "name": "Living on campusTerms and Conditions (living on campus)"
+        },
+        {
+            "name": "Terms and Conditions (living on campus)"
+        },
+        {
+            "name": "Living off campusTerms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Terms and Conditions (Living off-campus)"
+        },
+        {
+            "name": "Important Dates"
+        },
+        {
+            "name": "FAQ"
+        },
+        {
+            "name": "Terms and Conditions for 2025-2026 Meal Plans"
+        },
+        {
+            "name": "Newly Admitted Students"
+        },
+        {
+            "name": "Terms and Conditions for Faculty and Staff Flex Dollars"
+        },
+        {
+            "name": "Manage Your Account"
+        },
+        {
+            "name": "Serving Size Guide"
+        },
+        {
+            "name": "Special Diets"
+        },
+        {
+            "name": "Allergies"
+        },
+        {
+            "name": "Resources"
+        },
+        {
+            "name": "Food and Beverage Choices Policy"
+        },
+        {
+            "name": "Meet the Dietitian"
+        },
+        {
+            "name": "Sustainable Food"
+        },
+        {
+            "name": "Carbon Footprint"
+        },
+        {
+            "name": "Waste Reduction"
+        },
+        {
+            "name": "Gardens at Clark Kerr & Brown’s"
+        },
+        {
+            "name": "VisitingParentsFaculty/StaffMap"
+        },
+        {
+            "name": "Parents"
+        },
+        {
+            "name": "Faculty/Staff"
+        },
+        {
+            "name": "Map"
+        },
+        {
+            "name": "Tabling Request"
+        },
+        {
+            "name": "Comment Card"
+        },
+        {
+            "name": "Text and Tell"
+        },
+        {
+            "name": "JobsProfessional Staff JobsStudent Jobs"
+        },
+        {
+            "name": "Professional Staff Jobs"
+        },
+        {
+            "name": "Student Jobs"
+        },
+        {
+            "name": "Sitemap"
+        },
+        {
+            "name": "Catering"
+        },
+        {
+            "name": "Milk"
+        },
+        {
+            "name": "Egg"
+        },
+        {
+            "name": "Shellfish"
+        },
+        {
+            "name": "Fish"
+        },
+        {
+            "name": "Tree Nuts"
+        },
+        {
+            "name": "Wheat"
+        },
+        {
+            "name": "Peanuts"
+        },
+        {
+            "name": "Sesame"
+        },
+        {
+            "name": "Soybeans"
+        },
+        {
+            "name": "Low Carbon Footprint"
+        },
+        {
+            "name": "Medium Carbon Footprint"
+        },
+        {
+            "name": "High Carbon Footprint"
+        },
+        {
+            "name": "Vegan Option"
+        },
+        {
+            "name": "Vegetarian Option"
+        },
+        {
+            "name": "Contains Gluten"
+        },
+        {
+            "name": "Contains Pork"
+        },
+        {
+            "name": "Contains Alcohol"
+        },
+        {
+            "name": "Halal"
+        },
+        {
+            "name": "Kosher"
+        },
+        {
+            "name": "facebook"
+        },
+        {
+            "name": "instagram"
+        },
+        {
+            "name": "Privacy Policy"
+        },
+        {
+            "name": "Accessibility"
+        },
+        {
+            "name": "Nondiscrimination"
+        }
     ]
-  }
-  
+}

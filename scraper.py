@@ -7,17 +7,17 @@ from datetime import datetime
 def is_valid_food_item(text):
     """
     Return True if the text seems like a valid food item.
-    You can modify the blacklist or add more filtering conditions as needed.
+    Adjust the blacklist or other filtering rules as needed.
     """
     blacklist = [
-        "menu", "dining", "hours", "location", "serves", "beverages",
-        "contact", "find", "sustainability", "weekly", "news", "events"
+        "menu", "dining", "hours", "location", "serves",
+        "beverages", "contact", "find", "sustainability",
+        "weekly", "news", "events"
     ]
-    # Exclude if any blacklist word appears (case-insensitive)
     for word in blacklist:
         if word.lower() in text.lower():
             return False
-    # Exclude overly long items that are likely not individual food items.
+    # Exclude excessively long strings that are likely not an individual food item.
     if len(text) > 60:
         return False
     return True
@@ -26,51 +26,64 @@ def scrape_menu():
     url = "https://dining.berkeley.edu/menus/"
     response = requests.get(url)
     
-    # Check if the request was successful
     if response.status_code != 200:
         print("Error: Could not retrieve the menu page.")
         return None
         
     soup = BeautifulSoup(response.text, "html.parser")
-    
-    # Initialize an empty list to hold valid food items.
     food_items = []
+
+    # --- Example approach based on assumed structure: ---
+    # Assume the page is divided into blocks (divs) with class "menu-block"
+    # where each block contains a header with meal time and dining hall info
+    # and a list (li elements) of food items.
+    blocks = soup.find_all("div", class_="menu-block")
     
-    # Try to narrow down the search by finding a specific container.
-    # Inspect the page (right-click -> "View page source" or "Inspect Element")
-    # and change "menu-content" to a container that wraps only the food menu listings.
-    container = soup.find("div", class_="menu-content")
-    
-    if container:
-        # Assume that within this container the food items are in list items (li tags)
-        items = container.find_all("li")
+    if blocks:
+        for block in blocks:
+            # Attempt to find a header with class "menu-title" (or adjust to match the actual page)
+            header = block.find(["h2", "h3"], class_="menu-title")
+            if header:
+                header_text = header.get_text(strip=True)
+                # If the header contains a hyphen, assume the format is "Meal Time - Dining Hall"
+                if '-' in header_text:
+                    parts = header_text.split('-', 1)
+                    meal_time = parts[0].strip()
+                    location = parts[1].strip()
+                else:
+                    meal_time = header_text
+                    location = "Unknown"
+            else:
+                meal_time = "Unknown"
+                location = "Unknown"
+            
+            # Find food items within the current block
+            items = block.find_all("li")
+            for li in items:
+                text = li.get_text(strip=True)
+                if text and is_valid_food_item(text):
+                    food_items.append({
+                        "name": text,
+                        "meal_time": meal_time,
+                        "location": location
+                    })
     else:
-        # If a specific container is not found, fallback to finding all list items.
+        # Fallback: If no blocks are found, search all list items (with minimal context)
         items = soup.find_all("li")
-    
-    # Loop through each found item and filter by our criteria.
-    for item in items:
-        text = item.get_text(strip=True)
-        if text and is_valid_food_item(text):
-            food_items.append({"name": text})
-    
-    # In case the container-based search returned nothing or too little,
-    # you may extend the search to also look for other containers.
-    # For example, look for items inside div tags with a common class used for food items.
-    if not food_items:
-        alternative_items = soup.find_all("div", class_="menu-item")
-        for div in alternative_items:
-            text = div.get_text(strip=True)
+        for li in items:
+            text = li.get_text(strip=True)
             if text and is_valid_food_item(text):
-                food_items.append({"name": text})
+                food_items.append({
+                    "name": text,
+                    "meal_time": "Unknown",
+                    "location": "Unknown"
+                })
     
-    # Create the final menu data structure.
     menu_data = {
         "date": datetime.now().strftime("%Y-%m-%d"),
         "items": food_items
     }
     
-    # Save the filtered food items into menu_data.json.
     with open("menu_data.json", "w", encoding="utf-8") as f:
         json.dump(menu_data, f, indent=4, ensure_ascii=False)
     

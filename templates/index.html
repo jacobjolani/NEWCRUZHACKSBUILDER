@@ -1,21 +1,13 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Daily Meal Planner</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2em;
-        }
-        input {
-            margin: 0.5em 0;
-        }
-        .meal-plan {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        input { margin: 0.5em 0; }
+        .meal-plan { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -39,7 +31,6 @@
         document.getElementById("goalForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            // Prepare form data
             const formData = {
                 carbs: parseInt(document.getElementById("carbs").value, 10),
                 proteins: parseInt(document.getElementById("proteins").value, 10),
@@ -47,7 +38,6 @@
                 calories: parseInt(document.getElementById("calories").value, 10)
             };
 
-            // Send POST request to API endpoint
             fetch("/api/mealplan", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -57,24 +47,23 @@
             .then(data => {
                 const resultsDiv = document.getElementById("results");
                 
-                // Build result HTML for this submission
                 let resultHTML = `<div class="meal-plan"><h2>Your Meal Plan</h2>`;
                 if (data.meals.length === 0) {
                     resultHTML += `<p>No meal suggestions found. Please try again later.</p>`;
                 } else {
                     data.meals.forEach(function(meal) {
                         resultHTML += `<p><strong>${meal.name}</strong><br>
-                            Carbs: ${meal.carbs} g, Proteins: ${meal.proteins} g, Fats: ${meal.fats} g, Calories: ${meal.calories}</p>`;
+                        Meal Time: ${meal.meal_time}<br>
+                        Location: ${meal.location}<br>
+                        Carbs: ${meal.carbs} g, Proteins: ${meal.proteins} g, Fats: ${meal.fats} g, Calories: ${meal.calories}</p>`;
                     });
                     resultHTML += `<p><strong>Total macros:</strong><br>
-                            Carbs: ${data.total.carbs} g, Proteins: ${data.total.proteins} g, Fats: ${data.total.fats} g, Calories: ${data.total.calories}</p>`;
+                        Carbs: ${data.total.carbs} g, Proteins: ${data.total.proteins} g, Fats: ${data.total.fats} g, Calories: ${data.total.calories}</p>`;
                 }
                 resultHTML += `</div>`;
                 
-                // Append the new results to the existing results
+                // Append the new meal plan to previous results.
                 resultsDiv.innerHTML += resultHTML;
-                
-                // Optionally reset the form for the next submission
                 document.getElementById("goalForm").reset();
             })
             .catch(error => {
