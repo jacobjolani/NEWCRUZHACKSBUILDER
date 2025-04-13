@@ -18,16 +18,24 @@ def calculate_meal_plan(user_goals, max_meals=4):
     menu_data = load_menu_data()
     nutrition_data = load_nutrition_data()
     
+    # Create a mapping with lower-case keys for matching.
+    nutrition_map = { key.lower(): value for key, value in nutrition_data.items() }
+    
     available_items = []
     for item in menu_data.get("items", []):
         name = item.get("name")
-        if name in nutrition_data:
-            # Make a copy of the nutritional info and add the name.
-            details = nutrition_data[name].copy()
-            details["name"] = name
-            available_items.append(details)
+        if name:
+            normalized_name = name.lower()
+            if normalized_name in nutrition_map:
+                details = nutrition_map[normalized_name].copy()
+                details["name"] = name  # Preserve the original formatting.
+                available_items.append(details)
     
-    # If no items are matched, return empty plan.
+    # Debug print: list available items.
+    print("Available items for meal planning:")
+    for ai in available_items:
+        print(ai["name"])
+    
     if not available_items:
         return [], {"carbs": 0, "proteins": 0, "fats": 0, "calories": 0}
     
@@ -35,22 +43,21 @@ def calculate_meal_plan(user_goals, max_meals=4):
     min_diff = float("inf")
     best_total = None
 
-    # Check combinations from 1 to max_meals
+    # Check all combinations of 1 to max_meals items.
     for r in range(1, max_meals + 1):
         for combo in itertools.combinations(available_items, r):
             totals = {"carbs": 0, "proteins": 0, "fats": 0, "calories": 0}
-            for item in combo:
+            for combo_item in combo:
                 for macro in totals:
-                    totals[macro] += item.get(macro, 0)
-            # Calculate a simple difference (sum of absolute differences)
+                    totals[macro] += combo_item.get(macro, 0)
+            # Sum of absolute differences between the combo totals and the user goals.
             diff = sum(abs(totals[macro] - user_goals.get(macro, 0)) for macro in totals)
             if diff < min_diff:
                 min_diff = diff
                 best_combination = combo
                 best_total = totals
-                
+
     if best_combination is None:
         return [], {"carbs": 0, "proteins": 0, "fats": 0, "calories": 0}
-    
-    # Convert the best combination from tuple to list for easier handling.
+
     return [item for item in best_combination], best_total

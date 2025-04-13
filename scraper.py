@@ -10,8 +10,8 @@ def scrape_menu():
     soup = BeautifulSoup(response.text, "html.parser")
     
     items = []
-    # Example: find elements with class "menu-item".
-    # (You must adjust this selector to match the actual site structure.)
+    # For demonstration, we assume each menu item is contained in an element with class "menu-item".
+    # Adjust this selector according to the actual HTML structure.
     for element in soup.find_all(class_="menu-item"):
         text = element.get_text(strip=True)
         if text:
