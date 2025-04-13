@@ -16,16 +16,12 @@ def scrape_menu():
     menu = scraper.scrape_menu()
     return jsonify(menu)
 
-# API endpoint to get a meal plan for the given nutritional goals.
+# API endpoint for meal plan generation.
 @app.route('/api/mealplan', methods=['POST'])
 def get_meal_plan():
     user_goals = request.get_json()
-    meals, total_macros = calculate_meal_plan(user_goals)
-    response = {
-        "meals": meals,
-        "total": total_macros
-    }
-    return jsonify(response)
+    suggestions = calculate_meal_plan(user_goals)
+    return jsonify({"suggestions": suggestions})
 
 if __name__ == "__main__":
     app.run(debug=True)

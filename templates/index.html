@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Daily Meal Planner</title>
-    <!-- Link to external CSS in the static folder -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <!-- Include Google Fonts for a modern look -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -45,7 +43,7 @@
             </section>
 
             <section id="results" class="results-section">
-                <!-- Meal Plan results are appended here -->
+                <!-- The meal plan suggestions will appear here -->
             </section>
         </div>
     </main>
@@ -75,30 +73,28 @@
             .then(response => response.json())
             .then(data => {
                 const resultsDiv = document.getElementById("results");
-
-                let resultHTML = `<div class="meal-plan"><h2>Your Meal Plan</h2>`;
-                if (data.meals.length === 0) {
-                    resultHTML += `<p>No meal suggestions found. Please try again later.</p>`;
-                } else {
-                    data.meals.forEach(function(meal) {
-                        resultHTML += `<div class="meal-item">
-                                            <h3>${meal.name}</h3>
-                                            <p>Carbs: ${meal.carbs} g</p>
-                                            <p>Proteins: ${meal.proteins} g</p>
-                                            <p>Fats: ${meal.fats} g</p>
-                                            <p>Calories: ${meal.calories}</p>
-                                        </div>`;
+                data.suggestions.forEach((suggestion, index) => {
+                    let suggestionHTML = `<div class="meal-plan">
+                        <h2>Meal Plan Option ${index + 1}</h2>`;
+                    suggestion.meals.forEach(meal => {
+                        suggestionHTML += `<div class="meal-item">
+                                <h3>${meal.name}</h3>
+                                <p>Carbs: ${meal.carbs} g</p>
+                                <p>Proteins: ${meal.proteins} g</p>
+                                <p>Fats: ${meal.fats} g</p>
+                                <p>Calories: ${meal.calories}</p>
+                            </div>`;
                     });
-                    resultHTML += `<div class="meal-total">
-                                        <h3>Total Macros</h3>
-                                        <p>Carbs: ${data.total.carbs} g</p>
-                                        <p>Proteins: ${data.total.proteins} g</p>
-                                        <p>Fats: ${data.total.fats} g</p>
-                                        <p>Calories: ${data.total.calories}</p>
-                                    </div>`;
-                }
-                resultHTML += `</div>`;
-                resultsDiv.innerHTML += resultHTML;
+                    suggestionHTML += `<div class="meal-total">
+                            <h3>Total Macros</h3>
+                            <p>Carbs: ${suggestion.total.carbs} g</p>
+                            <p>Proteins: ${suggestion.total.proteins} g</p>
+                            <p>Fats: ${suggestion.total.fats} g</p>
+                            <p>Calories: ${suggestion.total.calories}</p>
+                        </div>
+                    </div>`;
+                    resultsDiv.innerHTML += suggestionHTML;
+                });
                 document.getElementById("goalForm").reset();
             })
             .catch(error => {
