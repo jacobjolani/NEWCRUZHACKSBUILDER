@@ -3,43 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Daily Meal Planner</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2em;
-        }
-        input {
-            margin: 0.5em 0;
-        }
-        .meal-plan {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <!-- Link to external CSS in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Optionally include Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Daily Meal Planner</h1>
-    <p>Enter your nutritional goals below:</p>
-    <form id="goalForm">
-        <label for="carbs">Carbs (g):</label><br>
-        <input type="number" id="carbs" name="carbs" required><br>
-        <label for="proteins">Proteins (g):</label><br>
-        <input type="number" id="proteins" name="proteins" required><br>
-        <label for="fats">Fats (g):</label><br>
-        <input type="number" id="fats" name="fats" required><br>
-        <label for="calories">Calories:</label><br>
-        <input type="number" id="calories" name="calories" required><br>
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+        <div class="container header-container">
+            <h1>Daily Meal Planner</h1>
+            <p>Your personalized guide to hitting your nutritional goals</p>
+        </div>
+    </header>
 
-    <div id="results" style="margin-top: 2em;"></div>
+    <main>
+        <div class="container">
+            <section class="form-section">
+                <h2>Enter Your Nutritional Goals</h2>
+                <form id="goalForm">
+                    <div class="form-group">
+                        <label for="carbs">Carbs (g):</label>
+                        <input type="number" id="carbs" name="carbs" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="proteins">Proteins (g):</label>
+                        <input type="number" id="proteins" name="proteins" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fats">Fats (g):</label>
+                        <input type="number" id="fats" name="fats" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calories">Calories:</label>
+                        <input type="number" id="calories" name="calories" required>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </section>
+
+            <section id="results" class="results-section">
+                <!-- Meal Plan results are appended here -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Daily Meal Planner. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script>
         document.getElementById("goalForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            // Prepare form data
+            // Prepare form data from user inputs
             const formData = {
                 carbs: parseInt(document.getElementById("carbs").value, 10),
                 proteins: parseInt(document.getElementById("proteins").value, 10),
@@ -47,7 +65,7 @@
                 calories: parseInt(document.getElementById("calories").value, 10)
             };
 
-            // Send POST request to API endpoint
+            // POST the data to the API endpoint
             fetch("/api/mealplan", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -56,25 +74,36 @@
             .then(response => response.json())
             .then(data => {
                 const resultsDiv = document.getElementById("results");
-                
-                // Build result HTML for this submission
-                let resultHTML = `<div class="meal-plan"><h2>Your Meal Plan</h2>`;
+
+                // Build the result HTML for this submission
+                let resultHTML = `<div class="meal-plan">
+                                    <h2>Your Meal Plan</h2>`;
                 if (data.meals.length === 0) {
                     resultHTML += `<p>No meal suggestions found. Please try again later.</p>`;
                 } else {
                     data.meals.forEach(function(meal) {
-                        resultHTML += `<p><strong>${meal.name}</strong><br>
-                            Carbs: ${meal.carbs} g, Proteins: ${meal.proteins} g, Fats: ${meal.fats} g, Calories: ${meal.calories}</p>`;
+                        resultHTML += `<div class="meal-item">
+                                            <h3>${meal.name}</h3>
+                                            <p>Carbs: ${meal.carbs} g</p>
+                                            <p>Proteins: ${meal.proteins} g</p>
+                                            <p>Fats: ${meal.fats} g</p>
+                                            <p>Calories: ${meal.calories}</p>
+                                        </div>`;
                     });
-                    resultHTML += `<p><strong>Total macros:</strong><br>
-                            Carbs: ${data.total.carbs} g, Proteins: ${data.total.proteins} g, Fats: ${data.total.fats} g, Calories: ${data.total.calories}</p>`;
+                    resultHTML += `<div class="meal-total">
+                                        <h3>Total Macros</h3>
+                                        <p>Carbs: ${data.total.carbs} g</p>
+                                        <p>Proteins: ${data.total.proteins} g</p>
+                                        <p>Fats: ${data.total.fats} g</p>
+                                        <p>Calories: ${data.total.calories}</p>
+                                    </div>`;
                 }
                 resultHTML += `</div>`;
-                
-                // Append the new results to the existing results
+
+                // Append results so that previous submissions remain visible
                 resultsDiv.innerHTML += resultHTML;
-                
-                // Optionally reset the form for the next submission
+
+                // Reset the form for the next submission
                 document.getElementById("goalForm").reset();
             })
             .catch(error => {
