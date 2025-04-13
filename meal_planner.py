@@ -1,80 +1,92 @@
 # meal_planner.py
 import json
-import itertools
+import pulp
 
 def load_nutrition_data():
     with open("nutrition_data.json", "r") as f:
         return json.load(f)
 
-def calculate_meal_plan(user_goals, max_meals=4):
+def calculate_meal_plan(user_goals):
     """
-    user_goals: dictionary with keys "calories", "fats", "carbs", "proteins" (all numeric)
-    max_meals: maximum number of food items to combine in a plan.
-    
+    user_goals: dictionary with numeric keys "calories", "fats", "carbs", "proteins"
     Returns a tuple: (list of selected food items, total macros dictionary)
     
-    This version uses the entire list of foods from nutrition_data.json.
+    This version uses a mixed-integer linear programming formulation via PuLP.
     """
     nutrition_data = load_nutrition_data()
     
-    # Create a list of available food items from the entire nutrition database.
-    # Convert numeric values from strings to floats if necessary.
-    available_items = []
+    # Build the list of available food items from the entire nutrition database.
+    items = []
     for key, nutrition in nutrition_data.items():
-        # Convert values to floats (if they are not already numeric)
         try:
             calories = float(nutrition.get("calories", 0))
-            fats = float(nutrition.get("fats", 0))
-            carbs = float(nutrition.get("carbs", 0))
+            fats     = float(nutrition.get("fats", 0))
+            carbs    = float(nutrition.get("carbs", 0))
             proteins = float(nutrition.get("proteins", 0))
         except Exception as e:
             print(f"Error converting nutrition for {key}: {e}")
             continue
         
-        item = {
+        items.append({
             "name": key,
             "calories": calories,
             "fats": fats,
             "carbs": carbs,
             "proteins": proteins
-        }
-        available_items.append(item)
+        })
 
-    if not available_items:
+    if not items:
         return [], {"calories": 0, "fats": 0, "carbs": 0, "proteins": 0}
+        
+    # Create a linear programming problem to minimize total deviation from targets.
+    prob = pulp.LpProblem("MealPlanner", pulp.LpMinimize)
+    
+    n = len(items)
+    # Decision variables: x[i] = 1 if item i is selected, else 0.
+    x = pulp.LpVariable.dicts("select", range(n), cat="Binary")
+    
+    # Macros we care about:
+    macros = ["calories", "fats", "carbs", "proteins"]
+    
+    # Slack variables for absolute differences for each macro:
+    over = {}   # amount above the target
+    under = {}  # amount below the target
+    for m in macros:
+        over[m]  = pulp.LpVariable(f"over_{m}", lowBound=0, cat="Continuous")
+        under[m] = pulp.LpVariable(f"under_{m}", lowBound=0, cat="Continuous")
+    
+    # Constraints: for each macro, the selected items' total minus the target equals (over - under)
+    for m in macros:
+        prob += (pulp.lpSum([x[i] * items[i][m] for i in range(n)]) - user_goals.get(m, 0) ==
+                 over[m] - under[m]), f"balance_{m}"
+    
+    # (Optional) You may also want to set a maximum number of items if desired.
+    # For example, uncomment the following lines to limit selection to, say, 6 items:
+    # max_items = 6
+    # prob += pulp.lpSum([x[i] for i in range(n)]) <= max_items, "max_items"
+    
+    # Objective: minimize the total absolute deviation
+    prob += pulp.lpSum([over[m] + under[m] for m in macros]), "TotalDeviation"
+    
+    # Solve the integer linear program
+    prob.solve()
+    
+    if pulp.LpStatus[prob.status] != "Optimal":
+        print("No optimal solution found!")
+        return [], {m: 0 for m in macros}
+    
+    # Retrieve selected items
+    selected_items = []
+    for i in range(n):
+        if pulp.value(x[i]) == 1:
+            selected_items.append(items[i])
+    
+    # Calculate totals for the combination
+    totals = {m: sum(item[m] for item in selected_items) for m in macros}
+    
+    return selected_items, totals
 
-    best_combination = None
-    min_diff = float("inf")
-    best_total = None
-
-    # Try every combination from 1 to max_meals items:
-    for r in range(1, max_meals + 1):
-        for combo in itertools.combinations(available_items, r):
-            totals = {"calories": 0, "fats": 0, "carbs": 0, "proteins": 0}
-            for item in combo:
-                totals["calories"] += item["calories"]
-                totals["fats"] += item["fats"]
-                totals["carbs"] += item["carbs"]
-                totals["proteins"] += item["proteins"]
-            
-            # Calculate a simple difference metric: sum of absolute differences.
-            diff = (abs(totals["calories"] - user_goals.get("calories", 0)) +
-                    abs(totals["fats"] - user_goals.get("fats", 0)) +
-                    abs(totals["carbs"] - user_goals.get("carbs", 0)) +
-                    abs(totals["proteins"] - user_goals.get("proteins", 0)))
-            
-            if diff < min_diff:
-                min_diff = diff
-                best_combination = combo
-                best_total = totals
-
-    if best_combination is None:
-        return [], {"calories": 0, "fats": 0, "carbs": 0, "proteins": 0}
-
-    # Return the best combination as a list and the corresponding totals.
-    return [item for item in best_combination], best_total
-
-# Example testing when run standalone:
+# For testing when run as a script:
 if __name__ == "__main__":
     sample_goals = {
         "calories": 2000,
@@ -82,8 +94,8 @@ if __name__ == "__main__":
         "carbs": 250,
         "proteins": 150
     }
-    meals, totals = calculate_meal_plan(sample_goals, max_meals=4)
-    print("Suggested Meals:")
+    meals, totals = calculate_meal_plan(sample_goals)
+    print("Selected meals:")
     for meal in meals:
         print(f"- {meal['name']}: Calories: {meal['calories']}, Fats: {meal['fats']}, Carbs: {meal['carbs']}, Proteins: {meal['proteins']}")
     print("Total macros:", totals)
