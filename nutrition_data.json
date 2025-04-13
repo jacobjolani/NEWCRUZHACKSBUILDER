@@ -1,0 +1,7 @@
+{
+    "Grilled Chicken": { "carbs": 0, "proteins": 30, "fats": 5, "calories": 200 },
+    "Pasta Primavera": { "carbs": 50, "proteins": 15, "fats": 10, "calories": 400 },
+    "Garden Salad": { "carbs": 15, "proteins": 5, "fats": 2, "calories": 100 },
+    "Veggie Burger": { "carbs": 40, "proteins": 20, "fats": 12, "calories": 350 }
+  }
+  

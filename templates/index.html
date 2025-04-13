@@ -1,0 +1,66 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Meal Planner</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        input { margin: 0.5em 0; }
+    </style>
+</head>
+<body>
+    <h1>Daily Meal Planner</h1>
+    <p>Enter your nutritional goals below:</p>
+    <form id="goalForm">
+        <label for="carbs">Carbs (g):</label><br>
+        <input type="number" id="carbs" name="carbs" required><br>
+        <label for="proteins">Proteins (g):</label><br>
+        <input type="number" id="proteins" name="proteins" required><br>
+        <label for="fats">Fats (g):</label><br>
+        <input type="number" id="fats" name="fats" required><br>
+        <label for="calories">Calories:</label><br>
+        <input type="number" id="calories" name="calories" required><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="results" style="margin-top: 2em;"></div>
+
+    <script>
+        document.getElementById("goalForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const formData = {
+                carbs: parseInt(document.getElementById("carbs").value),
+                proteins: parseInt(document.getElementById("proteins").value),
+                fats: parseInt(document.getElementById("fats").value),
+                calories: parseInt(document.getElementById("calories").value)
+            };
+
+            fetch("/api/mealplan", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById("results");
+                resultsDiv.innerHTML = "<h2>Your Meal Plan</h2>";
+                if (data.meals.length === 0) {
+                    resultsDiv.innerHTML += "<p>No meal suggestions found. Please try again later.</p>";
+                } else {
+                    data.meals.forEach(function(meal) {
+                        resultsDiv.innerHTML += `<p><strong>${meal.name}</strong><br>
+                        Carbs: ${meal.carbs} g, Proteins: ${meal.proteins} g, Fats: ${meal.fats} g, Calories: ${meal.calories}</p>`;
+                    });
+                    resultsDiv.innerHTML += `<p><strong>Total macros:</strong><br>
+                    Carbs: ${data.total.carbs} g, Proteins: ${data.total.proteins} g, Fats: ${data.total.fats} g, Calories: ${data.total.calories}</p>`;
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        });
+    </script>
+</body>
+</html>
+
