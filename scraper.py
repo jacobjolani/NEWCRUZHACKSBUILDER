@@ -3,95 +3,81 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
+import pickle
+import numpy as np
 
-def is_valid_food_item(text):
+# Load vectorizer & classifier
+with open("food_classifier.pkl", "rb") as f:
+    vectorizer, clf = pickle.load(f)
+
+def is_food_item_ml(text, threshold=0.8):
     """
-    Determines if text is likely an actual food item.
-    Adjust the blacklist words and length limits as needed.
+    Use the trained ML classifier to decide if text is a food item.
+    Returns True if predicted probability of "food" exceeds the threshold.
     """
-    blacklist = [
-        "menu", "dining", "hours", "location", "serves",
-        "beverages", "contact", "sustainability", "news", "events",
-        "allergen", "nutrient", "calories", "ingredients"  # add words that indicate header or info
-    ]
-    # Exclude empty or very short strings
-    if not text or len(text) < 3:
-        return False
-    # Exclude strings that are too long (these might be descriptions or headers)
-    if len(text) > 60:
-        return False
-    # Exclude strings containing any blacklisted word (case-insensitive)
-    lower_text = text.lower()
-    for word in blacklist:
-        if word in lower_text:
-            return False
-    return True
+    X_vec = vectorizer.transform([text])
+    # The classifier returns [prob_not_food, prob_food] if we do predict_proba
+    proba = clf.predict_proba(X_vec)[0]
+    
+    # 'food' is presumably the second class if the classes_ are in alphabetical order
+    # Let's figure out which index is "food" by searching clf.classes_:
+    # e.g. clf.classes_ -> ['food', 'not_food'] or vice versa
+    try:
+        idx_food = list(clf.classes_).index("food")
+    except ValueError:
+        # fallback if order is reversed
+        idx_food = 1
+
+    return proba[idx_food] >= threshold
 
 def scrape_menu():
+    """
+    Scrape the UC Berkeley Dining site and filter results using the classifier.
+    """
     url = "https://dining.berkeley.edu/menus/"
     response = requests.get(url)
     
     if response.status_code != 200:
         print("Error: Could not retrieve the menu page.")
         return None
-        
+    
     soup = BeautifulSoup(response.text, "html.parser")
-    food_items = []
     
-    # --- Attempt 1: Look for grouped dining hall blocks ---
-    # Many dining sites group menus by dining hall and then by meal (e.g. brunch, dinner).
-    # This example looks for a container with a class like "dining-hall".
-    # Adjust the class names below (e.g., "dining-hall", "meal-section") according to the actual structure.
-    dining_hall_blocks = soup.find_all("div", class_="dining-hall")
+    # Collect items (this may need adjusting based on the site structure)
+    # For example, many menus have 'menu-item' class or <li> tags inside certain containers
+    # The user’s screenshot suggests multiple dining halls, each with a label or block
+    # We can try a broad approach: find all <li> and handle them
+    all_items = soup.find_all("li")
     
-    if dining_hall_blocks:
-        for hall in dining_hall_blocks:
-            # Try to extract the dining hall name from a header (e.g., h2)
-            hall_header = hall.find("h2")
-            location = hall_header.get_text(strip=True) if hall_header else "Unknown"
-            
-            # Within each dining hall block, look for meal sections
-            meal_sections = hall.find_all("div", class_="meal-section")
-            for section in meal_sections:
-                # Try to extract the meal time (for example, from an h3 tag)
-                meal_header = section.find("h3")
-                meal_time = meal_header.get_text(strip=True) if meal_header else "Unknown"
-                
-                # Find food items. They might be listed as <li> items.
-                items = section.find_all("li")
-                for li in items:
-                    text = li.get_text(strip=True)
-                    if text and is_valid_food_item(text):
-                        food_items.append({
-                            "name": text,
-                            "meal_time": meal_time,
-                            "location": location
-                        })
-    else:
-        # --- Fallback Approach ---
-        # If the expected grouping is not found, use a generic approach.
-        # For example, look for all elements with a class "menu-item"
-        for element in soup.find_all(class_="menu-item"):
-            text = element.get_text(strip=True)
-            if text and is_valid_food_item(text):
-                food_items.append({
+    # We’ll track both text (food name) and possibly meal/hall if available
+    # But for simplicity, let's just store the text
+    filtered_items = []
+    for li in all_items:
+        text = li.get_text(strip=True)
+        if text:
+            # Classify with ML
+            if is_food_item_ml(text):
+                # Attempt to parse meal/hall from parent elements, if needed
+                # e.g., location = find_location(li)
+                # But in this minimal example, we just store text
+                filtered_items.append({
                     "name": text,
                     "meal_time": "Unknown",
                     "location": "Unknown"
                 })
     
-    # Build the final menu data with the current date
+    # Build final JSON
     menu_data = {
         "date": datetime.now().strftime("%Y-%m-%d"),
-        "items": food_items
+        "items": filtered_items
     }
     
-    # Save the filtered food items to menu_data.json
+    # Save to menu_data.json
     with open("menu_data.json", "w", encoding="utf-8") as f:
         json.dump(menu_data, f, indent=4, ensure_ascii=False)
     
-    print(f"Scraped {len(food_items)} food items.")
+    print(f"Scraped {len(filtered_items)} likely food items.")
     return menu_data
 
 if __name__ == "__main__":
-    scrape_menu()
+    data = scrape_menu()

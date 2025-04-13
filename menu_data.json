@@ -1,10 +1,360 @@
 {
     "date": "2025-04-13",
     "items": [
-      { "name": "Grilled Chicken" },
-      { "name": "Pasta Primavera" },
-      { "name": "Garden Salad" },
-      { "name": "Veggie Burger" }
+        {
+            "name": "Awards",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Staff Directory",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of March 2",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of March 9",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of March 16",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of March 23",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of March 30",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of April 6",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of April 13",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of April 27",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of April 20",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of May 4",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of May 11",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Week of May 18",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Café 3",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Clark Kerr",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Crossroads",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Foothill",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Bear Market",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "CKCub",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Cub Market",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "The DenPizzeria 1868",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Pizzeria 1868",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Brown’s",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "The Eateries at Student Union",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "The Golden Bear Café",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Local x Design",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Grubhub",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Campus Map",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Living on campusTerms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Living off campusTerms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Important Dates",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "FAQ",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions for 2024-2025 Meal Plans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Living on campusTerms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions (living on campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Living off campusTerms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions (Living off-campus)",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Important Dates",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "FAQ",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions for 2025-2026 Meal Plans",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Newly Admitted Students",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Terms and Conditions for Faculty and Staff Flex Dollars",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Manage Your Account",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Serving Size Guide",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Special Diets",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Allergies",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Resources",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Food and Beverage Choices Policy",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Meet the Dietitian",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Sustainable Food",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Carbon Footprint",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Waste Reduction",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Gardens at Clark Kerr & Brown’s",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "VisitingParentsFaculty/StaffMap",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Parents",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Faculty/Staff",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Map",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Tabling Request",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Comment Card",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Text and Tell",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "JobsProfessional Staff JobsStudent Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Professional Staff Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Student Jobs",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Sitemap",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Catering",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Privacy Policy",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Accessibility",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        },
+        {
+            "name": "Nondiscrimination",
+            "meal_time": "Unknown",
+            "location": "Unknown"
+        }
     ]
-  }
-  
+}
